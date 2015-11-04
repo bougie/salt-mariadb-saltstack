@@ -1,0 +1,17 @@
+{% load_yaml as rawmap %}
+CentOS:
+    server_package: mariadb
+    client_package: mariadb-libs
+    pymysql: py27-MySQLdb56
+    service: mariadb
+    admin: True
+    config:
+        file: /my.cnf
+        sections:
+            mysqld:
+                bind-address: 0.0.0.0
+                port: 3306
+    master_user:
+        username: root
+        password: root
+{% endload %}

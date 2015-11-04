@@ -1,0 +1,14 @@
+mariadb:
+    config:
+        file: /etc/mariadb/my.cnf
+    master_user:
+        username: root
+        password: password
+    users:
+        toto:
+            password: toto
+            host: "'%'"
+    databases:
+        - db_toto:
+            user: toto
+        - db_tata
