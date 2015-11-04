@@ -6,7 +6,7 @@ CentOS:
     service: mariadb
     admin: True
     config:
-        file: /my.cnf
+        file: /etc/my.cnf
         sections:
             mysqld:
                 bind-address: 0.0.0.0
