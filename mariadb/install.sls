@@ -14,6 +14,6 @@ mariadb_client_package:
 {% if mariadb.admin %}
 python_mariadb:
     pkg.installed:
-        - name: {{mariadb.pymariadb}}
+        - name: {{mariadb.pymysql}}
         - reload_modules: True
 {% endif %}
