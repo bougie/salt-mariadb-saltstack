@@ -2,7 +2,7 @@
 CentOS:
     server_package: mariadb
     client_package: mariadb-libs
-    pymysql: py27-MySQLdb56
+    pymysql: MySQL-python
     service: mariadb
     admin: True
     config:
